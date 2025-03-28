@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="container">
+    <div id="audioplayer">
+        <div id="song-title">Song Title</div>
+        <div id="artist">Artist</div>
+        <div id="info">General Info</div>
+
+        <div class="player-controls">
+            <button id="skip-prev" class="control-btn">&#10094;</button>
+            <button id="play" class="control-btn">▶</button>
+            <button id="skip-next" class="control-btn">&#10095;</button>
+        </div>
+   
+        <input type="range" id="volume" min="0" max="100" step="0.01" value="1">
+        
+        
+
+        <audio id="audio" src="sang.mp3" preload="auto"></audio>
+    </div>
+</section>
+
+<script src="app.js" type="module"></script>
+
+</body>
+</html>
